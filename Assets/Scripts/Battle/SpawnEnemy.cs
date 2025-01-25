@@ -6,8 +6,8 @@ public class SpawnEnemy : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public GameObject enemy;   
-    private int xLimits = 15; // x axis limits
-    private int yLimits = 10; // y axis limits
+    private int xLimits = 19; // x axis limits
+    private int yLimits = 12; // y axis limits
 
     private Vector3 coordinates = new Vector3(0f, 0f, 0);
 
@@ -32,24 +32,3 @@ public class SpawnEnemy : MonoBehaviour
         Instantiate(enemy, coordinates, enemy.transform.rotation);
     }
 }   
-
-
-class HuevoEnemy : MonoBehaviour
-{
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        //enemyRb = GetComponent<Rigidbody2D>();
-        Vector3 coordinates = new Vector3(Positionx, Positiony, 0);
-
-        Instantiate(enemy, coordinates, enemy.transform.rotation);
-    }
-
-    private void onCollisionEnter2D(Collision2D collision)
-    {
-        //if (collision.gameObeject.tag == "Block")
-        //{
-          //  Destroy(gameObject);
-        //}
-    }
-}

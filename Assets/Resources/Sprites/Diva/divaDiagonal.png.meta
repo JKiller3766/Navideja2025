@@ -272,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      divaDiagonal_0: 2153953442636397098
+      divaDiagonal_1: 8789208261761318350
+      divaDiagonal_2: 3584659791416672972
+      divaDiagonal_3: 7828870947292954132
+      divaDiagonal_4: -942318376262124162
+      divaDiagonal_5: -6564555625134608976
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

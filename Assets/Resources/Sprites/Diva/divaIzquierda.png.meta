@@ -272,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      divaIzquierda_0: -245813893153461417
+      divaIzquierda_1: -6835209190593731671
+      divaIzquierda_2: -4189060138868982864
+      divaIzquierda_3: -34390234476225477
+      divaIzquierda_4: -5239459335107587457
+      divaIzquierda_5: -7323329430577924843
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

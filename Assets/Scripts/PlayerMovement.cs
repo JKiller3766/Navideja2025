@@ -66,22 +66,21 @@ public class PlayerMovement : MonoBehaviour
             switch (contadorLoopSprite)
             {
                 case 1:
-                    _renderer.sprite = Load("Sprites/huevosprite", "huevosprite_0");
+                    _renderer.sprite = Load("Sprites/huevosprite", "huevosprite_0"); 
                     Debug.Log("1");
                     break;
                 case 2:
-                    _renderer.sprite = Load("Sprites/huevosprite_0", "huevosprite_1");
+                    _renderer.sprite = Load("Sprites/huevosprite", "huevosprite_1"); 
                     Debug.Log("2");
                     break;
                 case 3:
-                    _renderer.sprite = Load("Sprites/huevosprite", "huevosprite_2");
+                    _renderer.sprite = Load("Sprites/huevosprite", "huevosprite_2"); 
                     Debug.Log("3");
                     break;
                 case 4:
-                    _renderer.sprite = Load("Sprites/huevosprite", "huevosprite_3");
+                    _renderer.sprite = Load("Sprites/huevosprite", "huevosprite_3"); 
                     Debug.Log("4");
                     break;
-
             }
         }
         else if (posX > 0 && posY > 0)

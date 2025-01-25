@@ -322,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      marometaDelante_0: 9201335702702580278
+      marometaDelante_1: -4895208727213910079
+      marometaDelante_2: 4158843237612168012
+      marometaDelante_3: -1707786882541388707
+      marometaDelante_4: 1767861582349669584
+      marometaDelante_5: -3177926461064393285
+      marometaDelante_6: 378157804970618428
+      marometaDelante_7: 8996838636182625233
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

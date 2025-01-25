@@ -372,7 +372,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rolIzquierda_0: -1940136810477461821
+      rolIzquierda_1: 4640750071773206642
+      rolIzquierda_2: 7050841446099997164
+      rolIzquierda_3: -7233733164164145167
+      rolIzquierda_4: 6675244578259390675
+      rolIzquierda_5: 1071013980249266471
+      rolIzquierda_6: -3119832175077809503
+      rolIzquierda_7: -3421408991656344772
+      rolIzquierda_8: -2306290709086423404
+      rolIzquierda_9: 797410270240641098
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

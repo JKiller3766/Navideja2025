@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Luca_PlayerMovement : MonoBehaviour
 {
-    private float velocidad = 1f;
+    private float velocidad = 100f;
     public GameObject huevoPrincipal;
     private int contadorLoopSprite = 1;
     private Boolean subiendoContador = true;
@@ -23,8 +23,8 @@ public class Luca_PlayerMovement : MonoBehaviour
 
     public void Update()
     {
-        float velocidadX = Input.GetAxis("Horizontal");
-        float velocidadY = Input.GetAxis("Vertical");
+        float velocidadX = Input.GetAxisRaw("Horizontal");
+        float velocidadY = Input.GetAxisRaw("Vertical");
         
         Vector3 posicion = transform.position;
         CambioDeSprite(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));

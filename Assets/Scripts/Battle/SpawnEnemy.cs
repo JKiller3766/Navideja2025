@@ -32,3 +32,24 @@ public class SpawnEnemy : MonoBehaviour
         Instantiate(enemy, coordinates, enemy.transform.rotation);
     }
 }   
+
+
+class HuevoEnemy : MonoBehaviour
+{
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        //enemyRb = GetComponent<Rigidbody2D>();
+        Vector3 coordinates = new Vector3(Positionx, Positiony, 0);
+
+        Instantiate(enemy, coordinates, enemy.transform.rotation);
+    }
+
+    private void onCollisionEnter2D(Collision2D collision)
+    {
+        //if (collision.gameObeject.tag == "Block")
+        //{
+          //  Destroy(gameObject);
+        //}
+    }
+}

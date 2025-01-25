@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CaminandoPieDerecho_0: -8217716141343284603
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

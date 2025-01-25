@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Quieto_0: 2033754906967245142
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

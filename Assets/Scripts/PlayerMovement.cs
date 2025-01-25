@@ -4,20 +4,18 @@ using System.Collections.Generic;
 using System;
 using UnityEngine.UI;
 
-public class Luca_PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
-    private float velocidad = 100f;
+    private float velocidad = 1f;
     public GameObject huevoPrincipal;
     private int contadorLoopSprite = 1;
     private Boolean subiendoContador = true;
-    private int timeCounter = 0;
     [SerializeField]
     private SpriteRenderer _renderer;
 
     public void Start()
     {
         contadorLoopSprite = 1;
-        timeCounter = 0;
         subiendoContador = true;
     }
 
@@ -33,7 +31,7 @@ public class Luca_PlayerMovement : MonoBehaviour
 
         posicion = transform.position;
 
-        timeCounter++;
+
     }
 
     /*public void FixedUpdate()

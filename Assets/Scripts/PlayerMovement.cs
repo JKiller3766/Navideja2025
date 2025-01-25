@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private float velocidad = 1f;
+    private float velocidad = 150f;
     public GameObject huevoPrincipal;
     private int contadorLoopSprite = 1;
     private Boolean subiendoContador = true;
@@ -27,11 +27,9 @@ public class PlayerMovement : MonoBehaviour
         Vector3 posicion = transform.position;
         CambioDeSprite(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-        transform.position = transform.position + new Vector3(velocidadX * velocidad * Time.deltaTime, velocidadY * velocidad * Time.deltaTime, 0);
+        transform.position = transform.position + new Vector3(velocidadX, velocidadY, 0) * velocidad * Time.deltaTime;
 
-        posicion = transform.position;
-
-
+        Debug.Log(transform.position);
     }
 
     /*public void FixedUpdate()

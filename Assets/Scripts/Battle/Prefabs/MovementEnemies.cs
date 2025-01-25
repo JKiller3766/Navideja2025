@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Huevos_enemigos : MonoBehaviour
 { 
-      
+    public GameObject objectToActivateAndDesactivate; 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private float velocidad = 7f;
     private Vector3 posicion;
@@ -27,6 +27,7 @@ public class Huevos_enemigos : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision) 
     {
+        objectToActivateAndDesactivate.SetActive(false);
         Debug.Log("Holaaa");
         Destroy(this);
     }

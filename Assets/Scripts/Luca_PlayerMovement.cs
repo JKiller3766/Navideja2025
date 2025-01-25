@@ -1,34 +1,27 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
-public class HuevoProta {
-    public int posX;
-    public int deltaX;
-    public int posY;
-    public int deltaY;
+public class Luca_PlayerMovement : MonoBehaviour {
+    private float velocidad = 7f;
+    private Vector3 posicion;
 
-    public HuevoProta(){
-        posX= 0;
-        posY = 0;
-        deltaX = 1;
-        deltaY = 1;
+    public void Start()
+    {
+        
     }
 
-    public int getPosX(){return posX;}
-    public void setPosX(int newPosition){posX = newPosition;}
+    public void Update()
+    {
+        float velocidadX = Input.GetAxis("Horizontal");
+        float velocidadY = Input.GetAxis("Vertical");
 
-    public int getPosY(){return posY;}
-    public void setPosY(int newPosition){posY = newPosition;}
+        posicion = transform.position;
 
-    public int getDeltaX(){return deltaX;}
-    public void setDeltaX(int newDelta){deltaX = newDelta;}
+        transform.position = transform.position + new Vector3(velocidadX * velocidad * Time.deltaTime, velocidadY * velocidad * Time.deltaTime, 0);
 
-    public int getDeltaY(){return deltaY;}
-    public void setDeltaY(int newDelta){deltaY = newDelta;}
-}
+        posicion = transform.position;
 
-public class Luca_PlayerMovement
-{
-    static void Main(string[] args) {
-        HuevoProta huevo = new HuevoProta(); 
     }
+
 }

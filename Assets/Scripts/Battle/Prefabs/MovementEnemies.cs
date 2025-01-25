@@ -1,6 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic; 
+using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class Huevos_enemigos : MonoBehaviour
 { 
@@ -10,9 +12,27 @@ public class Huevos_enemigos : MonoBehaviour
     private float velocidad = 7f;
     private Vector3 posicion;
     
+    private int contadorLoopSprite = 1;
+    private bool subiendoContador = true;
+    
     private int velocitydirection, velocitxdirection; 
     private float velocidadY, velocidadX;
 
+    private SpriteRenderer _renderer;
+    
+    Sprite Load(string imageName, string spriteName)
+    {
+        Sprite[] all = Resources.LoadAll<Sprite>(imageName);
+
+        foreach (var s in all)
+        {
+            if (s.name == spriteName)
+            {
+                return s;
+            }
+        }
+        return null;
+    }
     private void Avake() {
         //soundManager = FindFirstObjectByType<SoundManager>();
     }
@@ -29,19 +49,69 @@ public class Huevos_enemigos : MonoBehaviour
 
     public void Update()   
     {
-
         posicion = transform.position;
 
         transform.position = transform.position + new Vector3((velocitxdirection * velocidad * Time.deltaTime), (velocitydirection * velocidad * Time.deltaTime), 0);
 
         posicion = transform.position;
         
-        if (posX == 0.0 && posY == 0.0)
         {
-            //Parado
-            _renderer.sprite = Load("Sprites/Diva", "Diva_0");
+            //Izquierda arriba
+        switch (contadorLoopSprite)
+        {
+            //Derecha
+            case 1:
+                _renderer.sprite = Load("Sprites/Diva", "divaDerecha_0"); 
+                break;
+            case 2:
+                _renderer.sprite = Load("Sprites/Diva", "divaDerecha_1"); 
+                break;
+            case 3:
+                _renderer.sprite = Load("Sprites/Diva", "divaDerecha_2"); 
+                break;
+            case 4:
+                _renderer.sprite = Load("Sprites/Diva", "divaDerecha_3"); 
+                break;
+            case 5:
+                _renderer.sprite = Load("Sprites/Diva", "divaDerecha_4"); 
+                break;
+            case 6:
+                _renderer.sprite = Load("Sprites/Diva", "divaDerecha_5"); 
+                break;
+            default:
+                break;
         }
-        else if (posX == 0 && posY > 0)
+        
+        if (subiendoContador == true)
+        {
+            if (contadorLoopSprite == 4)
+            {
+                subiendoContador = false;
+                contadorLoopSprite--;
+            }
+            else
+            {
+
+                contadorLoopSprite++;
+            }
+        }
+        else
+        {
+            if (contadorLoopSprite == 1)
+            {
+                subiendoContador = true;
+                contadorLoopSprite++;
+            }
+            else
+            {
+                contadorLoopSprite--;
+            }
+        }
+        }
+    }
+
+    private void Animation(float posX, float posY) {
+        if (posX == 0 && posY > 0)
         {
             switch (contadorLoopSprite)
             {
@@ -70,7 +140,7 @@ public class Huevos_enemigos : MonoBehaviour
         }
         else if (posX > 0 && posY > 0)
         {
-            //Diagonal arriba
+            //Diagonal arriba derecha
             switch (contadorLoopSprite)
             {
                 case 1:
@@ -166,74 +236,103 @@ public class Huevos_enemigos : MonoBehaviour
         }
         else if (posX < 0 && posY < 0)
         {
+            //Izquierda abajo
             switch (contadorLoopSprite)
             {
                 case 1:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_20");
-                    Debug.Log("21");
+                    _renderer.sprite = Load("Sprites/Diva", "Diva_20"); 
                     break;
                 case 2:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_21");
-                    Debug.Log("22");
+                    _renderer.sprite = Load("Sprites/Diva", "Diva_21"); 
                     break;
                 case 3:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_22");
-                    Debug.Log("23");
+                    _renderer.sprite = Load("Sprites/Diva", "Diva_22"); 
                     break;
                 case 4:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_23");
-                    Debug.Log("24");
+                    _renderer.sprite = Load("Sprites/Diva", "Diva_23"); 
                     break;
 
             }
         }
         else if (posX < 0 && posY == 0)
         {
+            //izquierda
             switch (contadorLoopSprite)
             {
+                //Derecha
                 case 1:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_24");
-                    Debug.Log("25");
+                    _renderer.sprite = Load("Sprites/Diva", "divaDerecha_0"); 
                     break;
                 case 2:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_25");
-                    Debug.Log("26");
+                    _renderer.sprite = Load("Sprites/Diva", "divaDerecha_1"); 
                     break;
                 case 3:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_26");
-                    Debug.Log("27");
+                    _renderer.sprite = Load("Sprites/Diva", "divaDerecha_2"); 
                     break;
                 case 4:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_27");
-                    Debug.Log("28");
+                    _renderer.sprite = Load("Sprites/Diva", "divaDerecha_3"); 
                     break;
-
+                case 5:
+                    _renderer.sprite = Load("Sprites/Diva", "divaDerecha_4"); 
+                    break;
+                case 6:
+                    _renderer.sprite = Load("Sprites/Diva", "divaDerecha_5"); 
+                    break;
+                default:
+                    break;
             }
         }
         else if (posX < 0 && posY > 0)
         {
+            //Derecha arriba
             switch (contadorLoopSprite)
             {
                 case 1:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_28");
-                    Debug.Log("29");
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal2_0");
                     break;
                 case 2:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_29");
-                    Debug.Log("30");
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal2_1");
                     break;
                 case 3:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_30");
-                    Debug.Log("31");
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal2_2");
                     break;
                 case 4:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_31");
-                    Debug.Log("32");
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal2_3");
                     break;
-
+                case 5:
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal2_4");
+                    break;
+                case 6:
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal2_%");
+                    break;
             }
         }
 
+        if (subiendoContador == true)
+        {
+            if (contadorLoopSprite == 4)
+            {
+                subiendoContador = false;
+                contadorLoopSprite--;
+            }
+            else
+            {
+
+                contadorLoopSprite++;
+            }
+        }
+        else
+        {
+            if (contadorLoopSprite == 1)
+            {
+                subiendoContador = true;
+                contadorLoopSprite++;
+            }
+            else
+            {
+                contadorLoopSprite--;
+            }
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision) 

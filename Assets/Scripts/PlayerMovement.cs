@@ -1,16 +1,15 @@
 using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
-using System;
+using System.Collections.Generic; 
 using UnityEngine.UI;
 using UnityEngine.UIElements;
-
+//Luca he quitado el using System que es por lo que no podias generar numeros aleatorios prueba ahora a poner lo que te pase ayer del cambio de posición
 public class PlayerMovement : MonoBehaviour
 {
-    private float velocidad = 2f;
+    private float velocidad = 0.5f;
     public GameObject huevoPrincipal;
     private int contadorLoopSprite = 1;
-    private Boolean subiendoContador = true;
+    private bool subiendoContador = true;
     [SerializeField]
     private SpriteRenderer _renderer;
 

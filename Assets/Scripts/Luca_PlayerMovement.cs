@@ -6,7 +6,7 @@ public class HuevoProta {
     public int posY;
     public int deltaY;
 
-    public HuevoProta{
+    public HuevoProta(){
         posX= 0;
         posY = 0;
         deltaX = 1;
@@ -20,15 +20,17 @@ public class HuevoProta {
     public void setPosY(int newPosition){posY = newPosition;}
 
     public int getDeltaX(){return deltaX;}
-    public void setPosX(int newDelta){deltaX = newDelta;}
+    public void setDeltaX(int newDelta){deltaX = newDelta;}
 
     public int getDeltaY(){return deltaY;}
-    public void setPosX(int newDelta){deltaY = newDelta;}
+    public void setDeltaX(int newDelta){deltaY = newDelta;}
 }
 
 public class PlayerMovement
 {
-    static void main {
-        HuevoProta huevo = new HuevoProta();
+    static void Main(string[] args) {
+        HuevoProta huevo = new HuevoProta(); 
+
+        console.log(huevo.getPosX()+" "+huevo.getPosY)
     }
 }

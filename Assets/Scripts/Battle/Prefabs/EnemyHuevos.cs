@@ -17,7 +17,7 @@ public class Huevos_enemigos : MonoBehaviour
     }
 
     private void onCollisionEnter2D(Collision2D collision)
-    {
+    { 
         //if (collision.gameObeject.tag == "Block")
         //{
           //  Destroy(gameObject);

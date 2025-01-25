@@ -13,7 +13,6 @@ public class PlayerMovement : MonoBehaviour
     private Boolean subiendoContador = true;
     [SerializeField]
     private SpriteRenderer _renderer;
-    int i = 0;
 
     public void Start()
     {
@@ -32,7 +31,6 @@ public class PlayerMovement : MonoBehaviour
         transform.position = posicion + new Vector3(inputX * Time.fixedDeltaTime, inputY * Time.fixedDeltaTime, 0);
 
         CambioDeSprite(inputX, inputY);
-        i++;
     }
 
     Sprite Load(string imageName, string spriteName)

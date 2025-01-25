@@ -10,18 +10,20 @@ public class Huevos_enemigos : MonoBehaviour
     private float velocidad = 7f;
     private Vector3 posicion;
     
-    private int velocitydirection, velocitxdirection; 
+    private velocitydirection, velocitxdirection; 
     private float velocidadY, velocidadX;
 
     private void Avake() {
         //soundManager = FindFirstObjectByType<SoundManager>();
     }
 
-    public void Update()
-    {
+    public void Start() {
         velocitydirection = Random.Range(-1, 1);
         velocitxdirection = Random.Range(-1, 1);
-        Debug.Log(velocitxdirection);
+    }
+
+    public void Update()   
+    {
 
         posicion = transform.position;
 

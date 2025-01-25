@@ -27,59 +27,8 @@ public class Huevos_enemigos : MonoBehaviour
         transform.position = transform.position + new Vector3((velocitxdirection * velocidad * Time.deltaTime), (velocitydirection * velocidad * Time.deltaTime), 0);
 
         posicion = transform.position;
-        
-        
-            //Izquierda arriba
-        switch (contadorLoopSprite)
-        {
-            //Derecha
-            case 1:
-                _renderer.sprite = Load("Sprites/Diva", "divaDerecha_0"); 
-                break;
-            case 2:
-                _renderer.sprite = Load("Sprites/Diva", "divaDerecha_1"); 
-                break;
-            case 3:
-                _renderer.sprite = Load("Sprites/Diva", "divaDerecha_2"); 
-                break;
-            case 4:
-                _renderer.sprite = Load("Sprites/Diva", "divaDerecha_3"); 
-                break;
-            case 5:
-                _renderer.sprite = Load("Sprites/Diva", "divaDerecha_4"); 
-                break;
-            case 6:
-                _renderer.sprite = Load("Sprites/Diva", "divaDerecha_5"); 
-                break;
-            default:
-                break;
-        }
-        
-        if (subiendoContador == true)
-        {
-            if (contadorLoopSprite == 4)
-            {
-                subiendoContador = false;
-                contadorLoopSprite--;
-            }
-            else
-            {
 
-                contadorLoopSprite++;
-            }
-        }
-        else
-        {
-            if (contadorLoopSprite == 1)
-            {
-                subiendoContador = true;
-                contadorLoopSprite++;
-            }
-            else
-            {
-                contadorLoopSprite--;
-            }
-        }
+        Animation(velocitydirection, velocitxdirection);
     }
 
 

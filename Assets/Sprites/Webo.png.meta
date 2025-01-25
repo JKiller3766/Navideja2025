@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d64ddc53dca91174a8f2dbee042d39ca
+guid: fd801b25bd35987488a0c2325cdb0a9c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1208040086343421634
-    second: image_0
+      213: 7857469243876458301
+    second: Webo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: image_0
+      name: Webo_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 3
         y: 0
-        width: 585
-        height: 663
+        width: 26
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ce8eecde02d3c010800000000000000
-      internalID: 1208040086343421634
+      spriteID: d3f30da85a65b0d60800000000000000
+      internalID: 7857469243876458301
       vertices: []
       indices: 
       edges: []
@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Webo_0: 7857469243876458301
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

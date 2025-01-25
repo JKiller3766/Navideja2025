@@ -14,40 +14,13 @@ public class Huevos_enemigos : MonoBehaviour
     
     private int contadorLoopSprite = 1;
     private bool subiendoContador = true;
+    [SerializeField]
+    private SpriteRenderer _renderer;
     
     private int velocitydirection, velocitxdirection; 
     private float velocidadY, velocidadX;
-
-    private SpriteRenderer _renderer;
     
-    Sprite Load(string imageName, string spriteName)
-    {
-        Sprite[] all = Resources.LoadAll<Sprite>(imageName);
-
-        foreach (var s in all)
-        {
-            if (s.name == spriteName)
-            {
-                return s;
-            }
-        }
-        return null;
-    }
-    private void Avake() {
-        //soundManager = FindFirstObjectByType<SoundManager>();
-    }
-
-    void Start() {
-        velocitydirection = Random.Range(-1, 1);
-        velocitxdirection = Random.Range(-1, 1);
-        if(velocitydirection == 0) {
-            velocitxdirection = 1;
-        } else if (velocitxdirection == 0) {
-            velocitydirection = 1;
-        }
-    }
-
-    public void Update()   
+        public void Update()   
     {
         posicion = transform.position;
 
@@ -55,7 +28,7 @@ public class Huevos_enemigos : MonoBehaviour
 
         posicion = transform.position;
         
-        {
+        
             //Izquierda arriba
         switch (contadorLoopSprite)
         {
@@ -107,6 +80,33 @@ public class Huevos_enemigos : MonoBehaviour
                 contadorLoopSprite--;
             }
         }
+    }
+
+
+    Sprite Load(string imageName, string spriteName)
+    {
+        Sprite[] all = Resources.LoadAll<Sprite>(imageName);
+
+        foreach (var s in all)
+        {
+            if (s.name == spriteName)
+            {
+                return s;
+            }
+        }
+        return null;
+    }
+    private void Avake() {
+        //soundManager = FindFirstObjectByType<SoundManager>();
+    }
+
+    void Start() {
+        velocitydirection = Random.Range(-1, 1);
+        velocitxdirection = Random.Range(-1, 1);
+        if(velocitydirection == 0) {
+            velocitxdirection = 1;
+        } else if (velocitxdirection == 0) {
+            velocitydirection = 1;
         }
     }
 

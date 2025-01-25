@@ -217,6 +217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 5185392876797350989}
+  _renderer: {fileID: 1284891954553986727}
 --- !u!50 &325635929994775249
 Rigidbody2D:
   serializedVersion: 5

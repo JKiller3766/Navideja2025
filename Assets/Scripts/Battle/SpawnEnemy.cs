@@ -5,13 +5,15 @@ using UnityEngine;
 public class SpawnEnemy : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public GameObject enemy;
+    public GameObject enemy;   
+    private int xLimits = 15; // x axis limits
+    private int yLimits = 10; // y axis limits
 
-    private Vector2 coordinates = new Vector2(0f, 0.99f);
+    private Vector3 coordinates = new Vector3(0f, 0f, 0);
 
     void Start()
     {
-        Instantiate(enemy, coordinates, enemy.transform.rotation);
+        InvokeRepeating("SpawnREnemy", 1f, 1f);
     }
 
     // Update is called once per frame
@@ -19,4 +21,14 @@ public class SpawnEnemy : MonoBehaviour
     {
         
     }
-}
+
+    // 
+    void SpawnREnemy() {
+        float Positionx = Random.Range(-xLimits, xLimits);
+        float Positiony = Random.Range(-yLimits, yLimits);
+
+        Vector3 coordinates = new Vector3(Positionx, Positiony, 0);
+
+        Instantiate(enemy, coordinates, enemy.transform.rotation);
+    }
+}   

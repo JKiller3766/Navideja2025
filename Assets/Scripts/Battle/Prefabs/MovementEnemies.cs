@@ -20,6 +20,11 @@ public class Huevos_enemigos : MonoBehaviour
     void Start() {
         velocitydirection = Random.Range(-1, 1);
         velocitxdirection = Random.Range(-1, 1);
+        if(velocitydirection == 0) {
+            velocitxdirection = 0;
+        } else if (velocitxdirection == 0) {
+            velocitydirection = 1;
+        }
     }
 
     public void Update()   

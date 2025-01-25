@@ -23,14 +23,12 @@ public class HuevoProta {
     public void setDeltaX(int newDelta){deltaX = newDelta;}
 
     public int getDeltaY(){return deltaY;}
-    public void setDeltaX(int newDelta){deltaY = newDelta;}
+    public void setDeltaY(int newDelta){deltaY = newDelta;}
 }
 
-public class PlayerMovement
+public class Luca_PlayerMovement
 {
     static void Main(string[] args) {
         HuevoProta huevo = new HuevoProta(); 
-
-        console.log(huevo.getPosX()+" "+huevo.getPosY)
     }
 }

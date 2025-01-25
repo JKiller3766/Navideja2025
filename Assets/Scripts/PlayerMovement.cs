@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
         subiendoContador = true;
     }
 
-    public void Update()
+    public void Update() 
     {
 
         float inputX = Input.GetAxisRaw("Horizontal");

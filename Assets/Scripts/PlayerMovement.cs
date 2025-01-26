@@ -12,26 +12,42 @@ public class PlayerMovement : MonoBehaviour
     private bool subiendoContador = true;
     [SerializeField]
     private SpriteRenderer _renderer;
-    
+    public Animator animator;
 
     public void Start()
     {
         contadorLoopSprite = 1;
         subiendoContador = true;
+        animator = GetComponent<Animator>();
     }
 
     public void Update()  
     {
 
-        float inputX = Input.GetAxisRaw("Horizontal");
-        float inputY = Input.GetAxisRaw("Vertical");
+        float inputHorizontal = Input.GetAxisRaw("Horizontal");
+        float inputVertical = Input.GetAxisRaw("Vertical");
+
+        Moviendo(inputVertical);
 
         Vector3 posicion = transform.position;
 
-        transform.position = posicion + new Vector3(inputX * Time.fixedDeltaTime, inputY * Time.fixedDeltaTime, 0);
+        transform.position = posicion + new Vector3(inputHorizontal * Time.fixedDeltaTime, inputVertical * Time.fixedDeltaTime, 0);
 
-        CambioDeSprite(inputX, inputY);
+        //CambioDeSprite(inputX, inputY);
+    } 
+    
+    private void Moviendo(float inputVertical){
+        if (inputVertical != 0f)
+        {
+            animator.SetBool("Arriba", true);
+        }
+        if (inputVertical == 0f)
+        {
+            animator.SetBool("Arriba", false);
+        }
+
     }
+    /*
 
     Sprite Load(string imageName, string spriteName)
     {
@@ -233,5 +249,5 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-    }
+    }*/
 }

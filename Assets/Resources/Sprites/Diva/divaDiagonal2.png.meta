@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 86f04f1e5c195ab498196003ecbbdf23
+guid: 86291ee20ac25f643a17de5205cd4ba6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1274225477370642722
-    second: divaDiagonal2_0
+      213: -6561261762631408880
+    second: divaDiagonal2 1_0
   - first:
-      213: -7890553659125575233
-    second: divaDiagonal2_1
+      213: 118399468624497434
+    second: divaDiagonal2 1_1
   - first:
-      213: -703757388464021784
-    second: divaDiagonal2_2
+      213: -1650279829806610018
+    second: divaDiagonal2 1_2
   - first:
-      213: 6339716295731732089
-    second: divaDiagonal2_3
+      213: 1460522121810473865
+    second: divaDiagonal2 1_3
   - first:
-      213: 773641553595373280
-    second: divaDiagonal2_4
+      213: -4808472794561628633
+    second: divaDiagonal2 1_4
   - first:
-      213: 8014870319005226939
-    second: divaDiagonal2_5
+      213: -3241353603856137477
+    second: divaDiagonal2 1_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -111,24 +111,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: divaDiagonal2_0
+      name: divaDiagonal2 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -143,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: edef191fdaa015ee0800000000000000
-      internalID: -1274225477370642722
+      spriteID: 0136000a037b1f4a0800000000000000
+      internalID: -6561261762631408880
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: divaDiagonal2_1
+      name: divaDiagonal2 1_1
       rect:
         serializedVersion: 2
         x: 5
@@ -165,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fb159a2c04f1f7290800000000000000
-      internalID: -7890553659125575233
+      spriteID: a1b45fc70b3a4a100800000000000000
+      internalID: 118399468624497434
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: divaDiagonal2_2
+      name: divaDiagonal2 1_2
       rect:
         serializedVersion: 2
         x: 3
@@ -187,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8ee9b844260cb36f0800000000000000
-      internalID: -703757388464021784
+      spriteID: e9982640d370919e0800000000000000
+      internalID: -1650279829806610018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: divaDiagonal2_3
+      name: divaDiagonal2 1_3
       rect:
         serializedVersion: 2
         x: 1
@@ -209,41 +196,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 97e58d7b1623bf750800000000000000
-      internalID: 6339716295731732089
+      spriteID: 983fc11b121d44410800000000000000
+      internalID: 1460522121810473865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: divaDiagonal2_4
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 33
-        width: 30
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0e69881e4e68cba00800000000000000
-      internalID: 773641553595373280
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: divaDiagonal2_5
+      name: divaDiagonal2 1_4
       rect:
         serializedVersion: 2
         x: 2
-        y: 2
-        width: 28
+        y: 33
+        width: 30
         height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -253,8 +218,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bb7d02d271a8a3f60800000000000000
-      internalID: 8014870319005226939
+      spriteID: 7263600487fd44db0800000000000000
+      internalID: -4808472794561628633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divaDiagonal2 1_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf209ba12166403d0800000000000000
+      internalID: -3241353603856137477
       vertices: []
       indices: 
       edges: []
@@ -273,12 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      divaDiagonal2_0: -1274225477370642722
-      divaDiagonal2_1: -7890553659125575233
-      divaDiagonal2_2: -703757388464021784
-      divaDiagonal2_3: 6339716295731732089
-      divaDiagonal2_4: 773641553595373280
-      divaDiagonal2_5: 8014870319005226939
+      divaDiagonal2 1_0: -6561261762631408880
+      divaDiagonal2 1_1: 118399468624497434
+      divaDiagonal2 1_2: -1650279829806610018
+      divaDiagonal2 1_3: 1460522121810473865
+      divaDiagonal2 1_4: -4808472794561628633
+      divaDiagonal2 1_5: -3241353603856137477
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

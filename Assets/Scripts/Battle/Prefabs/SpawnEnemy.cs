@@ -9,11 +9,11 @@
         private int xLimits = 19; // x axis limits
         private int yLimits = 12; // y axis limits
 
-        private Vector3 coordinates = new Vector3(0f, 0f, 0);
+        private Vector2 coordinates = new Vector3(0f, 0f);
 
         void Start()
         {
-            InvokeRepeating("SpawnREnemy", 1f, 1f);
+            InvokeRepeating("SpawnREnemy", 2f, 0.5f);
         }
 
         // Update is called once per frame
@@ -28,7 +28,7 @@
             float Positiony = Random.Range(-yLimits, yLimits);
 
 
-            Vector3 coordinates = new Vector3(Positionx, Positiony, 0);
+            Vector2 coordinates = new Vector2(Positionx, Positiony);
 
             Instantiate(enemy, coordinates, enemy.transform.rotation);
         }

@@ -8,10 +8,10 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float velocidad = 100f;
     public GameObject huevoPrincipal;
-    private int contadorLoopSprite = 1;
-    private bool subiendoContador = true;
-    [SerializeField]
-    private SpriteRenderer _renderer;
+    //private int contadorLoopSprite = 1;
+    //private bool subiendoContador = true;
+    //[SerializeField]
+    //private SpriteRenderer _renderer;
     public Animator playerAnimator;
     private Vector2 moveInput;
     private Rigidbody2D playerRb;
@@ -20,8 +20,8 @@ public class PlayerMovement : MonoBehaviour
     public void Start()
     {
 
-        contadorLoopSprite = 1;
-        subiendoContador = true;
+        //contadorLoopSprite = 1;
+        //subiendoContador = true;
         playerAnimator = GetComponent<Animator>();
         playerRb = GetComponent<Rigidbody2D>();
     }

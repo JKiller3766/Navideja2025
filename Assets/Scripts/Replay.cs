@@ -5,10 +5,10 @@ using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MenuInicial : MonoBehaviour
+public class Replay : MonoBehaviour
 {
    public void Jugar(){
-        SceneManager.LoadScene(1); //escena 1 es la cinematica
+        SceneManager.LoadScene(2); //escena 2 juego
    }
 
    public void Salir() {

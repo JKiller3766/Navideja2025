@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Tiempo : MonoBehaviour
 { 
@@ -32,6 +33,9 @@ public class Tiempo : MonoBehaviour
             segText = ((int)seg).ToString();
         }
         tiempo.text = "" + minText + ":" + segText;
+
+        if (min <=0 && seg <= 0) {
+            SceneManager.LoadScene(2); //escena 2 es el juego
+        }
     }
- 
 }

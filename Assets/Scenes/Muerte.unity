@@ -1938,7 +1938,6 @@ GameObject:
   - component: {fileID: 946286633}
   - component: {fileID: 946286634}
   - component: {fileID: 946286635}
-  - component: {fileID: 946286636}
   m_Layer: 0
   m_Name: Jugador
   m_TagString: Untagged
@@ -1998,6 +1997,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 10
   huevoPrincipal: {fileID: 946286626}
+  _renderer: {fileID: 946286631}
   playerAnimator: {fileID: 946286634}
 --- !u!212 &946286631
 SpriteRenderer:
@@ -2158,18 +2158,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &946286636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 946286626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf9fe5b9adc2a794eb552de2aee5462c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1978210066
 GameObject:
   m_ObjectHideFlags: 0

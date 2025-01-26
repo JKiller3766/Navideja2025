@@ -93,119 +93,28 @@ public class Huevos_enemigos : MonoBehaviour
             switch (contadorLoopSprite)
             {
                 case 1:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_4");
-                    Debug.Log("5");
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_0"); 
                     break;
                 case 2:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_5");
-                    Debug.Log("6");
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_1"); 
                     break;
                 case 3:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_6");
-                    Debug.Log("7");
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_2"); 
                     break;
                 case 4:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_7");
-                    Debug.Log("8");
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_3"); 
                     break;
-
+                case 5:
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_4"); 
+                    break;
+                case 6:
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_5"); 
+                    break;
             }
         }
         else if (posX > 0 && posY == 0)
         {
             //Horrizontal derecha
-            switch (contadorLoopSprite)
-            {
-                case 1:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_8");
-                    Debug.Log("9");
-                    break;
-                case 2:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_9");
-                    Debug.Log("10");
-                    break;
-                case 3:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_10");
-                    Debug.Log("11");
-                    break;
-                case 4:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_11");
-                    Debug.Log("12");
-                    break;
-
-            }
-        }
-        else if (posX > 0 && posY < 0)
-        {   
-            //Diagonal para abajo izquierda
-            switch (contadorLoopSprite)
-            {
-                case 1:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_12");
-                    Debug.Log("13");
-                    break;
-                case 2:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_13");
-                    Debug.Log("14");
-                    break;
-                case 3:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_14");
-                    Debug.Log("15");
-                    break;
-                case 4:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_15");
-                    Debug.Log("16");
-                    break;
-
-            }
-        }
-        else if (posX == 0 && posY < 0)
-        {
-            //Diagonal
-            switch (contadorLoopSprite)
-            {
-                case 1:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_16");
-                    Debug.Log("17");
-                    break;
-                case 2:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_17");
-                    Debug.Log("18");
-                    break;
-                case 3:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_18");
-                    Debug.Log("19");
-                    break;
-                case 4:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_19");
-                    Debug.Log("20");
-                    break;
-
-            }
-        }
-        else if (posX < 0 && posY < 0)
-        {
-            //Izquierda abajo
-            switch (contadorLoopSprite)
-            {
-                case 1:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_20"); 
-                    break;
-                case 2:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_21"); 
-                    break;
-                case 3:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_22"); 
-                    break;
-                case 4:
-                    _renderer.sprite = Load("Sprites/Diva", "Diva_23"); 
-                    break;
-
-            }
-        }
-        else if (posX < 0 && posY == 0)
-        {
-            //izquierda
             switch (contadorLoopSprite)
             {
                 //Derecha
@@ -231,28 +140,133 @@ public class Huevos_enemigos : MonoBehaviour
                     break;
             }
         }
+        else if (posX > 0 && posY < 0)
+        {   
+            //Diagonal para abajo derecha
+            switch (contadorLoopSprite)
+            {
+                case 1:
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_0"); 
+                    break;
+                case 2:
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_1"); 
+                    break;
+                case 3:
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_2"); 
+                    break;
+                case 4:
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_3"); 
+                    break;
+                case 5:
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_4"); 
+                    break;
+                case 6:
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_5"); 
+                    break;
+
+            }
+        }
+        else if (posX == 0 && posY < 0)
+        {
+            //Abajo 
+            switch (contadorLoopSprite)
+            {
+                case 1:
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_0"); 
+                    break;
+                case 2:
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_1"); 
+                    break;
+                case 3:
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_2"); 
+                    break;
+                case 4:
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_3"); 
+                    break;
+                case 5:
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_4"); 
+                    break;
+                case 6:
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_5"); 
+                    break;
+
+            } 
+        }
+        else if (posX < 0 && posY < 0)
+        {
+            //Izquierda abajo
+            switch (contadorLoopSprite)
+            {
+                case 1:
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_0"); 
+                    break;
+                case 2:
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_1"); 
+                    break;
+                case 3:
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_2"); 
+                    break;
+                case 4:
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_3"); 
+                    break;
+                case 5:
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_4"); 
+                    break;
+                case 6:
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_5"); 
+                    break;
+
+            }
+        }
+        else if (posX < 0 && posY == 0)
+        {
+            //izquierda
+            switch (contadorLoopSprite)
+            { 
+                case 1:
+                    _renderer.sprite = Load("Sprites/Diva", "divaIzquierda_0"); 
+                    break;
+                case 2:
+                    _renderer.sprite = Load("Sprites/Diva", "divaIzquierda_1"); 
+                    break;
+                case 3:
+                    _renderer.sprite = Load("Sprites/Diva", "divaIzquierda_2"); 
+                    break;
+                case 4:
+                    _renderer.sprite = Load("Sprites/Diva", "divaIzquierda_3"); 
+                    break;
+                case 5:
+                    _renderer.sprite = Load("Sprites/Diva", "divaIzquierda_4"); 
+                    break;
+                case 6:
+                    _renderer.sprite = Load("Sprites/Diva", "divaIzquierda_5"); 
+                    break;
+                default:
+                    break;
+            }
+        }
         else if (posX < 0 && posY > 0)
         {
             //Derecha arriba
             switch (contadorLoopSprite)
             {
                 case 1:
-                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal2_0");
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_0");
                     break;
                 case 2:
-                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal2_1");
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_1");
                     break;
                 case 3:
-                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal2_2");
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_2");
                     break;
                 case 4:
-                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal2_3");
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_3");
                     break;
                 case 5:
-                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal2_4");
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_4");
                     break;
                 case 6:
-                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal2_%");
+                    _renderer.sprite = Load("Sprites/Diva", "divaDiagonal_5");
                     break;
             }
         }

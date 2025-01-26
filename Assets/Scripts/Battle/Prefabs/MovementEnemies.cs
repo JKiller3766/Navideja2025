@@ -36,9 +36,6 @@ public class Huevos_enemigos : MonoBehaviour
             velocitxdirection = Random.Range(-1, 2);
         } while (velocitxdirection == 0 && velocitydirection == 0);
 
-        Debug.Log(velocitydirection);
-        Debug.Log(velocitxdirection);
-
         enemyAnimator = GetComponent<Animator>();
         enemyRb = GetComponent<Rigidbody2D>();
     }

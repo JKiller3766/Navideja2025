@@ -1,24 +1,34 @@
-/*using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;  
+using UnityEngine.UIElements;
+using TMPro;
 
 public class Tiempo : MonoBehaviour
 { 
+    [SerializeField] int min, seg;
+    [SerializeField] TextMeshProUGUI tiempo;
 
-    public float minuts, seconds, timer;
-    public Text timertext;
+    private float restante;
+    private bool enMarcha;
     // Start is called once before the first execution of Update after the MonoBehaviour is created 
-
-    void Start() {
-        minuts = 1;
-        seconds = 10;
+    private void Awake() {
+        enMarcha = true;
+        restante = min*60 + seg;
     }
     // Update is called once per frame
     void Update()
     {
-        timer = timer -1;
-        //timertext.text = "00" + timer.ToString();
+        if (enMarcha)
+        {
+            restante = Time.deltaTime;
+            if(restante < 1) {
+                //Matar
+            }
+            int tempMin = (int)(restante/60);
+            int tempSeg = (int)(restante % 60);
+            tiempo.text = string.Format("{00:00}:{01:00}", tempMin, tempSeg);
     }
 }
-*/
+}

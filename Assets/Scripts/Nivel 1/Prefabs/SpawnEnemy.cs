@@ -34,7 +34,7 @@ public class SpawnEnemy : MonoBehaviour
             if (contadorTiempo <= 257.15 && contadorDificultad == 1){
                 InvokeRepeating("SpawnREnemy", 1f, 0.75f);
                 contadorDificultad++;
-                dificultad.text = "DIF. = " + contadorDificultad.ToString();
+                dificultad.text = "DIF. = " + ((int)contadorDificultad).ToString();
 
             } else if (contadorTiempo <= 214.3 && contadorDificultad == 2)
             {

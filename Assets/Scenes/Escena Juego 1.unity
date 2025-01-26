@@ -1998,6 +1998,7 @@ MonoBehaviour:
   velocidad: 10
   huevoPrincipal: {fileID: 946286626}
   playerAnimator: {fileID: 946286634}
+  posicion: {x: 0, y: 0}
 --- !u!212 &946286631
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2503,8 +2504,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e6221216a5c68f44b7447e03e454965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  min: 1
-  seg: 1
+  min: 5
+  seg: 0
   tiempo: {fileID: 1186709453}
 --- !u!4 &1919183501
 Transform:

@@ -4,7 +4,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
-using static UnityEngine.Rendering.HableCurve;
+using static UnityEngine.Rendering.HableCurve; 
 
 public class SpawnEnemy : MonoBehaviour
 {
@@ -24,7 +24,6 @@ public class SpawnEnemy : MonoBehaviour
         InvokeRepeating("SpawnREnemy", 1f, 0.75f);
     }
 
-
         void FixedUpdate()
         {
             if (contadorTiempo > 0)
@@ -35,32 +34,37 @@ public class SpawnEnemy : MonoBehaviour
             if (contadorTiempo <= 257.15 && contadorDificultad == 1){
                 InvokeRepeating("SpawnREnemy", 1f, 0.75f);
                 contadorDificultad++;
-            dificultad.text = "DIF. = " + contadorDificultad;
+                dificultad.text = "DIF. = " + contadorDificultad.ToString();
 
             } else if (contadorTiempo <= 214.3 && contadorDificultad == 2)
             {
                 InvokeRepeating("SpawnREnemy", 1f, 0.75f);
                 contadorDificultad++;
+                dificultad.text = "DIF. = " + contadorDificultad.ToString();
             }
             else if (contadorTiempo <= 171.45 && contadorDificultad == 3)
             {
                 InvokeRepeating("SpawnREnemy", 1f, 0.75f);
                 contadorDificultad++;
+                dificultad.text = "DIF. = " + contadorDificultad.ToString();
             }
             else if (contadorTiempo <= 128.6 && contadorDificultad == 4)
             {
                 InvokeRepeating("SpawnREnemy", 1f, 0.75f);
                 contadorDificultad++;
+                dificultad.text = "DIF. = " + contadorDificultad.ToString();
             }
             else if (contadorTiempo <= 85.75 && contadorDificultad == 5)
             {
                 InvokeRepeating("SpawnREnemy", 1f, 0.75f);
                 contadorDificultad++;
+                dificultad.text = "DIF. = " + contadorDificultad.ToString();
             }
             else if (contadorTiempo <= 42.9 && contadorDificultad == 6)
             {
                 InvokeRepeating("SpawnREnemy", 1f, 0.75f);
                 contadorDificultad++;
+                dificultad.text = "DIF. = " + contadorDificultad.ToString();
             }
 
     }

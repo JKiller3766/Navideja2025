@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class MenuInicial : MonoBehaviour
 {
    public void Jugar(){
-        SceneManager.LoadScene(2); //escena 1 es el juego
+        SceneManager.LoadScene(1); //escena 1 es el juego
    }
 
    public void Salir() {

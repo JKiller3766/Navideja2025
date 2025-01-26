@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveInput;
     private Rigidbody2D playerRb;
 
+    public Vector2 posicion;
     
     public void Start()
     {
@@ -35,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {  
         playerRb.MovePosition(playerRb.position + moveInput * velocidad * Time.fixedDeltaTime);
+        posicion = playerRb.position;
     }
    
 }

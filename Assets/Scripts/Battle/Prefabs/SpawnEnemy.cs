@@ -11,7 +11,8 @@
 
         private Vector2 coordinates = new Vector3(0f, 0f);
 
-        void Start()
+        public PlayerMovement huevoPosition;
+    void Start()
         {
             InvokeRepeating("SpawnREnemy", 2f, 0.5f);
         }
@@ -24,11 +25,17 @@
 
         // 
         void SpawnREnemy() {
+
             float Positionx = Random.Range(-xLimits, xLimits);
             float Positiony = Random.Range(-yLimits, yLimits);
 
 
             Vector2 coordinates = new Vector2(Positionx, Positiony);
+
+            while (coordinates.x != huevoPosition.posicion.x)
+        {
+            Debug.Log("a");
+        }
 
             Instantiate(enemy, coordinates, enemy.transform.rotation);
         }

@@ -502,8 +502,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00010493, y: 0}
-  m_SizeDelta: {x: 267.0144, y: 143.6255}
+  m_AnchoredPosition: {x: -0.0000076293945, y: 0}
+  m_SizeDelta: {x: 459.968, y: 143.626}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &809859788
 MonoBehaviour:
@@ -1022,7 +1022,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: JUGAR
+  m_text: Ahuevante!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
@@ -1135,8 +1135,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -0.000015258789, y: 79}
-  m_SizeDelta: {x: 1063.6787, y: 62.9227}
+  m_AnchoredPosition: {x: 3, y: 98.261}
+  m_SizeDelta: {x: 1063.679, y: 101.81}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1475198876
 MonoBehaviour:

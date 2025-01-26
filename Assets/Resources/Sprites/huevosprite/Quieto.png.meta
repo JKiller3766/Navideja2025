@@ -103,10 +103,10 @@ TextureImporter:
       name: Quieto_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 2
-        width: 27
-        height: 26
+        x: 3
+        y: 3
+        width: 25
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b60592b9aeee6e74a8c37afa0f547f30
     internalID: 0
     vertices: []
     indices: 

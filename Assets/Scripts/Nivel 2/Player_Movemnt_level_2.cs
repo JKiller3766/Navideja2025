@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic; 
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement2 : MonoBehaviour
 {
@@ -37,6 +38,11 @@ public class PlayerMovement2 : MonoBehaviour
     {  
         playerRb.MovePosition(playerRb.position + moveInput * velocidad * Time.fixedDeltaTime);
         posicion = playerRb.position;
+
+        if (playerRb.position.y > 156)
+        {
+            SceneManager.LoadScene(3);
+        }
     }
    
 }

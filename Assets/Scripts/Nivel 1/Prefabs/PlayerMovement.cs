@@ -6,17 +6,19 @@ using UnityEngine.UIElements;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float velocidad = 100f;
+    [SerializeField] private float velocidad;
     public GameObject huevoPrincipal;
     public Animator playerAnimator;
     private Vector2 moveInput;
     private Rigidbody2D playerRb;
 
+    public Vector2 posicion;
     
     public void Start()
     {
         playerAnimator = GetComponent<Animator>();
         playerRb = GetComponent<Rigidbody2D>();
+        playerRb.MovePosition(new Vector2(0, 0));
     }
 
     public void Update()  
@@ -34,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {  
         playerRb.MovePosition(playerRb.position + moveInput * velocidad * Time.fixedDeltaTime);
+        posicion = playerRb.position;
     }
    
 }

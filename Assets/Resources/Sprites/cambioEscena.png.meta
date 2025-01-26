@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 076627d024ff53c45909667c459a99b6
+guid: c6b4b58dce3b2ac46a54068ead57af16
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8681309432077807827
-    second: quieto3_0
+      213: 2571962055485954526
+    second: cambioEscena_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: quieto3_0
+      name: cambioEscena_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1
-        width: 31
-        height: 27
+        y: 0
+        width: 352
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d2f01cb211bc58780800000000000000
-      internalID: -8681309432077807827
+      spriteID: ed91605dcd171b320800000000000000
+      internalID: 2571962055485954526
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      quieto3_0: -8681309432077807827
+      cambioEscena_0: 2571962055485954526
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

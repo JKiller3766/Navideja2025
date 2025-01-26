@@ -8,12 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuInicial.unity
     guid: 0e2fb2056a7adbe40b4a068fd2adfc65
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Escena Juego.unity
     guid: 2c080726df4869c41a5010ce040576d9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Victor.unity
     guid: 3d98a169c5a0abd4ab4078e301ed5192
+  - enabled: 1
+    path: Assets/Scenes/Nivel_1.unity
+    guid: e1558a87a978a6d47adfe9a37fe4aad3
   - enabled: 1
     path: Assets/Scenes/Muerte.unity
     guid: 508db87bba11f094d8416536791d07f0

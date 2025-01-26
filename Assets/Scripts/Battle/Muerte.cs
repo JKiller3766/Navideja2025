@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Muerte : MonoBehaviour
 {
@@ -10,12 +11,12 @@ public class Muerte : MonoBehaviour
         vidas--;
     }
 
-
     // Update is called once per frame
     void Update()
     {
         if(vidas == 0) {
             SceneManager.LoadScene(3);
         }
+
     }
 }

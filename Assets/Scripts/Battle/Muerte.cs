@@ -15,7 +15,7 @@ public class Muerte : MonoBehaviour
     void Update()
     {
         if(vidas == 0) {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(2);
         }
 
     }

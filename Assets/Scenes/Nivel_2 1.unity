@@ -686,8 +686,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaf5e55670435dc49a221d3f48f22d6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 7
-  posicion: {x: 0, y: 0}
+  velocidad: 5
+  posicion: {x: 0, y: -3}
+  huevo: {fileID: 1050322646}
 --- !u!60 &123574259
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -749,7 +750,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 123574254}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -3802,6 +3803,11 @@ PolygonCollider2D:
       - {x: 0.42752525, y: 0.44291908}
       - {x: 0.39999998, y: 0.56}
   m_UseDelaunayMesh: 0
+--- !u!224 &1050322646 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6742937861882237918, guid: ecd6f759d1da5dc4b9d0e2fb780f8f16, type: 3}
+  m_PrefabInstance: {fileID: 361149269}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1070952676 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2253911629886400664, guid: 871462efea3741a46b81687aae86f64c, type: 3}

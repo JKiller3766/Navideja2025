@@ -35,7 +35,7 @@ public class Tiempo : MonoBehaviour
         tiempo.text = "" + minText + ":" + segText;
 
         if (min <=0 && seg <= 0) {
-            SceneManager.LoadScene(3); //escena 2 es el juego
+            SceneManager.LoadScene(4); //escena 2 es el juego
         }
     }
 }

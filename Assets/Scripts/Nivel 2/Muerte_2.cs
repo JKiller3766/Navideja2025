@@ -6,11 +6,17 @@ public class Muerte_2 : MonoBehaviour
 {
     private Rigidbody2D playerRb;
 
+    public void Start()
+    { 
+        playerRb = GetComponent<Rigidbody2D>();
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if(playerRb.position.y > 170) {
+        if(playerRb.position.y > 10) {
             SceneManager.LoadScene(3);
         }
     }
 }
+    

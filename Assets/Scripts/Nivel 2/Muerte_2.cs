@@ -14,8 +14,8 @@ public class Muerte_2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(playerRb.position.y > 10) {
-            SceneManager.LoadScene(3);
+        if(playerRb.position.y > 156) {
+            SceneManager.LoadScene(5);
         }
     }
 }

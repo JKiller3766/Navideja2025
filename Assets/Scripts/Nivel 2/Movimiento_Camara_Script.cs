@@ -29,7 +29,7 @@ public class MovimientoObjeto : MonoBehaviour
         if (huevo.position.y == playerRb.position.y)
         {
             Destroy(huevo);
-            SceneManager.LoadScene(3); //escena 2 es el juego
+            SceneManager.LoadScene(5); //escena 2 es el juego
         }
     }
    

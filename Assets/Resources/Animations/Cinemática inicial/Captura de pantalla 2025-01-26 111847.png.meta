@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 2b0f390a6f6040f40b2b55721a89082e
+guid: a089ccde9ecca754c816ffa09b177934
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2033754906967245142
-    second: Quieto_0
-  - first:
-      213: -5601971722205798826
-    second: Quieto_1
-  - first:
-      213: -1709524692030421264
-    second: Quieto_2
+      213: -87063668588749690
+    second: Captura de pantalla 2025-01-26 111847_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -107,7 +101,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -119,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Quieto_0
+      name: Captura de pantalla 2025-01-26 111847_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 3
-        width: 28
-        height: 27
+        x: 0
+        y: 0
+        width: 725
+        height: 608
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,52 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6518df50059593c10800000000000000
-      internalID: 2033754906967245142
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Quieto_1
-      rect:
-        serializedVersion: 2
-        x: 31
-        y: 3
-        width: 34
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 65ed320366cc142b0800000000000000
-      internalID: -5601971722205798826
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Quieto_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 3
-        width: 32
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0f684cc995c8648e0800000000000000
-      internalID: -1709524692030421264
+      spriteID: 68cdce00e00bacef0800000000000000
+      internalID: -87063668588749690
       vertices: []
       indices: 
       edges: []
@@ -198,9 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Quieto_0: 2033754906967245142
-      Quieto_1: -5601971722205798826
-      Quieto_2: -1709524692030421264
+      Captura de pantalla 2025-01-26 111847_0: -87063668588749690
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

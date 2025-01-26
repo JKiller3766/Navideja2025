@@ -10,7 +10,7 @@ public class Escena_cambio : MonoBehaviour
     void Start()
     {
         seg = 0;
-        fondo.SetActive(true); 
+        gameObject.SetActive(true); 
     }
 
     // Update is called once per frame

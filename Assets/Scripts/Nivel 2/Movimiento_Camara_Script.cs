@@ -16,7 +16,7 @@ public class MovimientoObjeto : MonoBehaviour
 
     public void Update()  
     {
-        moveInput = new Vector2(0, 1).normalized;
+        moveInput = new Vector2(0, 1);
     } 
     
     private void FixedUpdate()

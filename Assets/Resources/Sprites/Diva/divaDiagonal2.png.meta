@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: d58ec0c6ef178334798880e790d35574
+guid: 86f04f1e5c195ab498196003ecbbdf23
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5802397487765179293
-    second: huevosprite_0
+      213: -1274225477370642722
+    second: divaDiagonal2_0
   - first:
-      213: -9136168424814502178
-    second: huevosprite_1
+      213: -7890553659125575233
+    second: divaDiagonal2_1
   - first:
-      213: -8361699072011094186
-    second: huevosprite_2
+      213: -703757388464021784
+    second: divaDiagonal2_2
+  - first:
+      213: 6339716295731732089
+    second: divaDiagonal2_3
+  - first:
+      213: 773641553595373280
+    second: divaDiagonal2_4
+  - first:
+      213: 8014870319005226939
+    second: divaDiagonal2_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -102,17 +111,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: huevosprite_0
+      name: divaDiagonal2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 159
         width: 32
-        height: 32
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d9bccdfc5c1468050800000000000000
-      internalID: 5802397487765179293
+      spriteID: edef191fdaa015ee0800000000000000
+      internalID: -1274225477370642722
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: huevosprite_1
+      name: divaDiagonal2_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
+        x: 5
+        y: 127
+        width: 27
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ede9ace193fc53180800000000000000
-      internalID: -9136168424814502178
+      spriteID: fb159a2c04f1f7290800000000000000
+      internalID: -7890553659125575233
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: huevosprite_2
+      name: divaDiagonal2_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
+        x: 3
+        y: 95
+        width: 29
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,30 +187,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 657b0160ff645fb80800000000000000
-      internalID: -8361699072011094186
+      spriteID: 8ee9b844260cb36f0800000000000000
+      internalID: -703757388464021784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: huevosprite_3
+      name: divaDiagonal2_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
+        x: 1
+        y: 63
+        width: 31
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 59d83045bdf6aca4f8c3d2b0161742a0
-      internalID: -1803420536
+      spriteID: 97e58d7b1623bf750800000000000000
+      internalID: 6339716295731732089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divaDiagonal2_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 33
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e69881e4e68cba00800000000000000
+      internalID: 773641553595373280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: divaDiagonal2_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb7d02d271a8a3f60800000000000000
+      internalID: 8014870319005226939
       vertices: []
       indices: 
       edges: []
@@ -197,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 35bb4a7812da86d4b924d16f53c2d3cb
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -207,10 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      huevosprite_0: 5802397487765179293
-      huevosprite_1: -9136168424814502178
-      huevosprite_2: -8361699072011094186
-      huevosprite_3: -1803420536
+      divaDiagonal2_0: -1274225477370642722
+      divaDiagonal2_1: -7890553659125575233
+      divaDiagonal2_2: -703757388464021784
+      divaDiagonal2_3: 6339716295731732089
+      divaDiagonal2_4: 773641553595373280
+      divaDiagonal2_5: 8014870319005226939
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

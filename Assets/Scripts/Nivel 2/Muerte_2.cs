@@ -4,14 +4,13 @@ using UnityEngine.UI;
 
 public class Muerte_2 : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
- 
-    private void OnCollisionEnter2D(Collision2D collision) 
-    { 
-    }
+    private Rigidbody2D playerRb;
 
     // Update is called once per frame
     void Update()
-    { 
+    {
+        if(playerRb.position.y > 170) {
+            SceneManager.LoadScene(3);
+        }
     }
 }

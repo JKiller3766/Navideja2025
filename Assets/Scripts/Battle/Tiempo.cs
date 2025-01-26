@@ -9,18 +9,29 @@ public class Tiempo : MonoBehaviour
     [SerializeField] float seg;
     [SerializeField] TextMeshProUGUI tiempo;
  
+    private string minText, segText;
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     { 
-        seg -= Time.deltaTime;
+        seg -= Time.fixedDeltaTime;
         if(seg <= 0) {
             if(min != 0) {
                 min--;
                 seg = 60;
             }
         }
+        if(min < 10) {
+            minText = "0" + min.ToString();
+        } else {
+            minText = min.ToString();
+        }
 
-        tiempo.text = "" + min.ToString() + ":" + ((int)seg).ToString() ;
+        if(seg < 10) {
+            segText = "0" + ((int)seg).ToString();
+        } else {
+            segText = ((int)seg).ToString();
+        }
+        tiempo.text = "" + minText + ":" + segText;
     }
  
 }

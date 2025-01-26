@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Salero_0: 5508551117876425063
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

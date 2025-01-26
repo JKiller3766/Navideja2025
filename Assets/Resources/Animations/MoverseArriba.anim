@@ -21,19 +21,10 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 5802397487765179293, guid: d58ec0c6ef178334798880e790d35574, type: 3}
-    - time: 0.125
-      value: {fileID: -9136168424814502178, guid: d58ec0c6ef178334798880e790d35574, type: 3}
-    - time: 0.25
-      value: {fileID: -8361699072011094186, guid: d58ec0c6ef178334798880e790d35574, type: 3}
-    - time: 0.375
-      value: {fileID: -8361699072011094186, guid: d58ec0c6ef178334798880e790d35574, type: 3}
-    - time: 0.5
-      value: {fileID: -1803420536, guid: d58ec0c6ef178334798880e790d35574, type: 3}
-    - time: 0.625
-      value: {fileID: -8361699072011094186, guid: d58ec0c6ef178334798880e790d35574, type: 3}
-    - time: 0.75
-      value: {fileID: -9136168424814502178, guid: d58ec0c6ef178334798880e790d35574, type: 3}
+      value: {fileID: 2033754906967245142, guid: 2b0f390a6f6040f40b2b55721a89082e, type: 3}
+    - time: 1
+      value: {fileID: 2033754906967245142, guid: 2b0f390a6f6040f40b2b55721a89082e, type: 3}
+      9d63deb59d1612b5458dee98b33f41994b156a8d:Assets/Resources/Animations/Moverse.anim
     attribute: m_Sprite
     path: 
     classID: 212
@@ -56,19 +47,16 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 5802397487765179293, guid: d58ec0c6ef178334798880e790d35574, type: 3}
-    - {fileID: -9136168424814502178, guid: d58ec0c6ef178334798880e790d35574, type: 3}
-    - {fileID: -8361699072011094186, guid: d58ec0c6ef178334798880e790d35574, type: 3}
-    - {fileID: -8361699072011094186, guid: d58ec0c6ef178334798880e790d35574, type: 3}
-    - {fileID: -1803420536, guid: d58ec0c6ef178334798880e790d35574, type: 3}
-    - {fileID: -8361699072011094186, guid: d58ec0c6ef178334798880e790d35574, type: 3}
-    - {fileID: -9136168424814502178, guid: d58ec0c6ef178334798880e790d35574, type: 3}
+    - {fileID: 2033754906967245142, guid: 2b0f390a6f6040f40b2b55721a89082e, type: 3}
+    - {fileID: 2033754906967245142, guid: 2b0f390a6f6040f40b2b55721a89082e, type: 3}
+9d63deb59d1612b5458dee98b33f41994b156a8d:Assets/Resources/Animations/Moverse.anim
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.775
+    m_StopTime: 1.2
+9d63deb59d1612b5458dee98b33f41994b156a8d:Assets/Resources/Animations/Moverse.anim
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

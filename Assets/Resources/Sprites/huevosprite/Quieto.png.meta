@@ -5,6 +5,12 @@ TextureImporter:
   - first:
       213: 2033754906967245142
     second: Quieto_0
+  - first:
+      213: -5601971722205798826
+    second: Quieto_1
+  - first:
+      213: -1709524692030421264
+    second: Quieto_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,10 +109,10 @@ TextureImporter:
       name: Quieto_0
       rect:
         serializedVersion: 2
-        x: 3
+        x: 2
         y: 3
-        width: 25
-        height: 24
+        width: 28
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,11 +127,55 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Quieto_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 3
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65ed320366cc142b0800000000000000
+      internalID: -5601971722205798826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quieto_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 3
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f684cc995c8648e0800000000000000
+      internalID: -1709524692030421264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b60592b9aeee6e74a8c37afa0f547f30
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -136,6 +186,8 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Quieto_0: 2033754906967245142
+      Quieto_1: -5601971722205798826
+      Quieto_2: -1709524692030421264
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -2074,6 +2074,7 @@ GameObject:
   - component: {fileID: 946286633}
   - component: {fileID: 946286634}
   - component: {fileID: 946286635}
+  - component: {fileID: 946286636}
   m_Layer: 0
   m_Name: Jugador
   m_TagString: Untagged
@@ -2205,7 +2206,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.17, y: 7.13}
+  m_AnchoredPosition: {x: 11, y: -3}
   m_SizeDelta: {x: 0.32, y: 0.32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!58 &946286633
@@ -2293,6 +2294,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &946286636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946286626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf9fe5b9adc2a794eb552de2aee5462c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1153351222
 GameObject:
   m_ObjectHideFlags: 0
@@ -2322,9 +2335,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e6221216a5c68f44b7447e03e454965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  min: 0
-  seg: 10
-  temps: {fileID: 0}
 --- !u!4 &1153351224
 Transform:
   m_ObjectHideFlags: 0

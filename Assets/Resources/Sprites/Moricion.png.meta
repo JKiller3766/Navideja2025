@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Moricion_0: 4779353983846691263
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

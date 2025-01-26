@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2b0f390a6f6040f40b2b55721a89082e
+guid: eb03f305088def9419ad0142e0d736f1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2033754906967245142
-    second: Quieto_0
+      213: 1848117203632353988
+    second: Captura de pantalla 2025-01-25 202030_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -101,7 +101,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Quieto_0
+      name: Captura de pantalla 2025-01-25 202030_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 3
-        width: 25
-        height: 24
+        x: 0
+        y: 0
+        width: 956
+        height: 466
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6518df50059593c10800000000000000
-      internalID: 2033754906967245142
+      spriteID: 4c27bc11ec4d5a910800000000000000
+      internalID: 1848117203632353988
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b60592b9aeee6e74a8c37afa0f547f30
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Quieto_0: 2033754906967245142
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

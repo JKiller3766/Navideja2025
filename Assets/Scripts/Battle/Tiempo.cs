@@ -29,6 +29,6 @@ public class Tiempo : MonoBehaviour
             int tempMin = (int)(restante/60);
             int tempSeg = (int)(restante % 60);
             tiempo.text = string.Format("{00:00}:{01:00}", tempMin, tempSeg);
+        }
     }
-}
 }

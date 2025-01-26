@@ -2174,13 +2174,13 @@ GameObject:
   m_Component:
   - component: {fileID: 946286632}
   - component: {fileID: 946286631}
-  - component: {fileID: 946286629}
   - component: {fileID: 946286628}
   - component: {fileID: 946286627}
   - component: {fileID: 946286633}
   - component: {fileID: 946286634}
   - component: {fileID: 946286635}
   - component: {fileID: 946286636}
+  - component: {fileID: 946286637}
   m_Layer: 0
   m_Name: Jugador
   m_TagString: Untagged
@@ -2226,22 +2226,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 946286626}
   m_CullTransparentMesh: 1
---- !u!114 &946286629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 946286626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c7adf1b6dd016f4786a1fd0126e11e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad: 10
-  huevoPrincipal: {fileID: 946286626}
-  playerAnimator: {fileID: 946286634}
-  posicion: {x: 0, y: 0}
 --- !u!212 &946286631
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2413,6 +2397,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf9fe5b9adc2a794eb552de2aee5462c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &946286637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946286626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c4ed9e513667ac4fb4b884c8b19b152, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 0
+  huevoPrincipal: {fileID: 0}
+  playerAnimator: {fileID: 0}
+  posicion: {x: 0, y: 0}
 --- !u!1 &954270859
 GameObject:
   m_ObjectHideFlags: 0

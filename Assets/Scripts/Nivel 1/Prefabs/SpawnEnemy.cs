@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -16,6 +17,7 @@ public class SpawnEnemy : MonoBehaviour
 
     private Vector2 coordinates = new Vector3(0f, 0f);
     [SerializeField] public Transform huevo;
+    [SerializeField] TextMeshProUGUI dificultad;
 
     void Start()
     {
@@ -33,6 +35,7 @@ public class SpawnEnemy : MonoBehaviour
             if (contadorTiempo <= 257.15 && contadorDificultad == 1){
                 InvokeRepeating("SpawnREnemy", 1f, 0.75f);
                 contadorDificultad++;
+            dificultad.text = "DIF. = " + contadorDificultad;
 
             } else if (contadorTiempo <= 214.3 && contadorDificultad == 2)
             {

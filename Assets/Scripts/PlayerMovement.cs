@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private bool subiendoContador = true;
     [SerializeField]
     private SpriteRenderer _renderer;
+    
 
     public void Start()
     {

@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float velocidad = 100f;
+    [SerializeField] private float velocidad;
     public GameObject huevoPrincipal;
     public Animator playerAnimator;
     private Vector2 moveInput;

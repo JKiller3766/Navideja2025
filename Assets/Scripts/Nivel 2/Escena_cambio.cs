@@ -1,4 +1,6 @@
-using UnityEngine;
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
 
 public class Escena_cambio : MonoBehaviour
 {
@@ -12,13 +14,15 @@ public class Escena_cambio : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        seg = Time.fixedDeltaTime;
-        if(seg>5) {
-            fondo.SetActive(false); 
-            Destroy(fondo); 
-        }
+        Invoke("DestroyObject", 2f); 
     
+    }
+
+    void DestroyObject() {
+        gameObject.SetActive(false);
+        //soundManager.selectedAudio(0, 0.5f);
+        Destroy(gameObject); 
     }
 }

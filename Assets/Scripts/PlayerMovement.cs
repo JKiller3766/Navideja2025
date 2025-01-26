@@ -6,19 +6,24 @@ using UnityEngine.UIElements;
 //Luca he quitado el using System que es por lo que no podias generar numeros aleatorios prueba ahora a poner lo que te pase ayer del cambio de posición
 public class PlayerMovement : MonoBehaviour
 {
-    private float velocidad = 0.5f;
+    [SerializeField] private float velocidad = 100f;
     public GameObject huevoPrincipal;
     private int contadorLoopSprite = 1;
     private bool subiendoContador = true;
     [SerializeField]
     private SpriteRenderer _renderer;
-    public Animator animator;
+    public Animator playerAnimator;
+    private Vector2 moveInput;
+    private Rigidbody2D playerRb;
 
+    
     public void Start()
     {
+
         contadorLoopSprite = 1;
         subiendoContador = true;
-        animator = GetComponent<Animator>();
+        playerAnimator = GetComponent<Animator>();
+        playerRb = GetComponent<Rigidbody2D>();
     }
 
     public void Update()  
@@ -26,26 +31,21 @@ public class PlayerMovement : MonoBehaviour
 
         float inputHorizontal = Input.GetAxisRaw("Horizontal");
         float inputVertical = Input.GetAxisRaw("Vertical");
+        moveInput = new Vector2(inputHorizontal, inputVertical).normalized;
 
-        Moviendo(inputVertical);
+        playerAnimator.SetFloat("Horizontal", inputHorizontal);
+        playerAnimator.SetFloat("Vertical", inputVertical);
+        playerAnimator.SetFloat("Speed", moveInput.sqrMagnitude);
+        //Vector3 posicion = transform.position;
 
-        Vector3 posicion = transform.position;
-
-        transform.position = posicion + new Vector3(inputHorizontal * Time.fixedDeltaTime, inputVertical * Time.fixedDeltaTime, 0);
+        //transform.position = posicion + new Vector3(inputHorizontal * Time.fixedDeltaTime, inputVertical * Time.fixedDeltaTime, 0);
 
         //CambioDeSprite(inputX, inputY);
     } 
     
-    private void Moviendo(float inputVertical){
-        if (inputVertical != 0f)
-        {
-            animator.SetBool("Arriba", true);
-        }
-        if (inputVertical == 0f)
-        {
-            animator.SetBool("Arriba", false);
-        }
-
+    private void FixedUpdate()
+    {  
+        playerRb.MovePosition(playerRb.position + moveInput * velocidad * Time.fixedDeltaTime);
     }
     /*
 

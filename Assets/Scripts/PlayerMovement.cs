@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     {
         playerAnimator = GetComponent<Animator>();
         playerRb = GetComponent<Rigidbody2D>();
+        playerRb.MovePosition(new Vector2(0, 0));
     }
 
     public void Update()  

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MovimientoObjeto : MonoBehaviour
 {
@@ -7,21 +8,29 @@ public class MovimientoObjeto : MonoBehaviour
     private Rigidbody2D playerRb;
 
     public Vector2 posicion;
-    
+
+    [SerializeField] public Transform huevo;
+
     public void Start()
     { 
         playerRb = GetComponent<Rigidbody2D>();
-        playerRb.MovePosition(new Vector2(0, 0));
+        playerRb.MovePosition(new Vector2(0, -3));
     }
 
     public void Update()  
     {
-        moveInput = new Vector2(0, 1).normalized;
+        moveInput = new Vector2(0, 1);
     } 
     
     private void FixedUpdate()
     {  
         playerRb.MovePosition(playerRb.position + moveInput * velocidad * Time.fixedDeltaTime);
+
+        if (huevo.position.y == playerRb.position.y)
+        {
+            Destroy(huevo);
+            SceneManager.LoadScene(3); //escena 2 es el juego
+        }
     }
    
 }

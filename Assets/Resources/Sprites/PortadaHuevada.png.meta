@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3706006235936334b8e17936fc79d4d6
+guid: 6eb83bb9c9d60554a81fbf50c27eb5ac
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4199157903875480805
-    second: Muerte_0
+      213: -7394432528505797383
+    second: PortadaHuevada_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Muerte_0
+      name: PortadaHuevada_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 725
-        height: 608
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b136abf622899b5c0800000000000000
-      internalID: -4199157903875480805
+      spriteID: 9f481deeac2b16990800000000000000
+      internalID: -7394432528505797383
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Muerte_0: -4199157903875480805
+      PortadaHuevada_0: -7394432528505797383
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: ead2c150820e52b47868023b4e09217d
+guid: a293a799dc031b64b990ee84dac600fb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2153953442636397098
-    second: divaDiagonal_0
+      213: 6635541645947699213
+    second: divaDiagonal 1_0
   - first:
-      213: 8789208261761318350
-    second: divaDiagonal_1
+      213: -3806168973775911231
+    second: divaDiagonal 1_1
   - first:
-      213: 3584659791416672972
-    second: divaDiagonal_2
+      213: -6569647521880921300
+    second: divaDiagonal 1_2
   - first:
-      213: 7828870947292954132
-    second: divaDiagonal_3
+      213: 1148626311420324977
+    second: divaDiagonal 1_3
   - first:
-      213: -942318376262124162
-    second: divaDiagonal_4
+      213: 2993073794054411845
+    second: divaDiagonal 1_4
   - first:
-      213: -6564555625134608976
-    second: divaDiagonal_5
+      213: 3539399249300442233
+    second: divaDiagonal 1_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -111,24 +111,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: divaDiagonal_0
+      name: divaDiagonal 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -143,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a2a72137e3164ed10800000000000000
-      internalID: 2153953442636397098
+      spriteID: d00060b68fd261c50800000000000000
+      internalID: 6635541645947699213
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: divaDiagonal_1
+      name: divaDiagonal 1_1
       rect:
         serializedVersion: 2
         x: 0
@@ -165,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ecd363bc85a89f970800000000000000
-      internalID: 8789208261761318350
+      spriteID: 1c649fafb75cd2bc0800000000000000
+      internalID: -3806168973775911231
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: divaDiagonal_2
+      name: divaDiagonal 1_2
       rect:
         serializedVersion: 2
         x: 0
@@ -187,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cc2440486154fb130800000000000000
-      internalID: 3584659791416672972
+      spriteID: c2b23c6e26ce3d4a0800000000000000
+      internalID: -6569647521880921300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: divaDiagonal_3
+      name: divaDiagonal 1_3
       rect:
         serializedVersion: 2
         x: 0
@@ -209,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 41eb5cdb5acb5ac60800000000000000
-      internalID: 7828870947292954132
+      spriteID: 17c20e76b8db0ff00800000000000000
+      internalID: 1148626311420324977
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: divaDiagonal_4
+      name: divaDiagonal 1_4
       rect:
         serializedVersion: 2
         x: 1
         y: 33
         width: 30
-        height: 30
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,19 +218,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e7db29ded663ce2f0800000000000000
-      internalID: -942318376262124162
+      spriteID: 546d429f1c8898920800000000000000
+      internalID: 2993073794054411845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: divaDiagonal_5
+      name: divaDiagonal 1_5
       rect:
         serializedVersion: 2
-        x: 2
+        x: 1
         y: 2
-        width: 28
+        width: 29
         height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -253,8 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0bd2f8f707306e4a0800000000000000
-      internalID: -6564555625134608976
+      spriteID: 97c46dc5dd87e1130800000000000000
+      internalID: 3539399249300442233
       vertices: []
       indices: 
       edges: []
@@ -273,12 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      divaDiagonal_0: 2153953442636397098
-      divaDiagonal_1: 8789208261761318350
-      divaDiagonal_2: 3584659791416672972
-      divaDiagonal_3: 7828870947292954132
-      divaDiagonal_4: -942318376262124162
-      divaDiagonal_5: -6564555625134608976
+      divaDiagonal 1_0: 6635541645947699213
+      divaDiagonal 1_1: -3806168973775911231
+      divaDiagonal 1_2: -6569647521880921300
+      divaDiagonal 1_3: 1148626311420324977
+      divaDiagonal 1_4: 2993073794054411845
+      divaDiagonal 1_5: 3539399249300442233
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

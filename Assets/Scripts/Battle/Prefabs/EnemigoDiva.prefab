@@ -219,7 +219,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 5185392876797350989}
-  _renderer: {fileID: 1284891954553986727}
+  velocidad: 10
+  enemyAnimator: {fileID: 8339239885526346140}
 --- !u!50 &325635929994775249
 Rigidbody2D:
   serializedVersion: 5
@@ -246,7 +247,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &8339239885526346140
 Animator:
   serializedVersion: 7

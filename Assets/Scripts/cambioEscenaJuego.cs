@@ -1,4 +1,4 @@
-using System;
+/*using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.SearchService;
@@ -22,3 +22,4 @@ public class cambioEscenaJuego : MonoBehaviour
     SceneManager.LoadScene(2); //escena 2 es el juego
    }
 }
+*/

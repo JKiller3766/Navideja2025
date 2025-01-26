@@ -19,7 +19,7 @@ public class SpawnEnemy : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("SpawnREnemy", 1f, 0.5f);
+        InvokeRepeating("SpawnREnemy", 1f, 0.75f);
     }
 
 
@@ -30,48 +30,33 @@ public class SpawnEnemy : MonoBehaviour
             contadorTiempo -= Time.fixedDeltaTime;
             }
             
-            if (contadorTiempo <= 270 && contadorDificultad == 1){
-                InvokeRepeating("SpawnREnemy", 1f, 0.5f);
+            if (contadorTiempo <= 257.15 && contadorDificultad == 1){
+                InvokeRepeating("SpawnREnemy", 1f, 0.75f);
                 contadorDificultad++;
 
-            } else if (contadorTiempo <= 240 && contadorDificultad == 2)
+            } else if (contadorTiempo <= 214.3 && contadorDificultad == 2)
             {
-                InvokeRepeating("SpawnREnemy", 1f, 0.5f);
+                InvokeRepeating("SpawnREnemy", 1f, 0.75f);
                 contadorDificultad++;
             }
-            else if (contadorTiempo <= 210 && contadorDificultad == 3)
+            else if (contadorTiempo <= 171.45 && contadorDificultad == 3)
             {
-                InvokeRepeating("SpawnREnemy", 1f, 0.5f);
+                InvokeRepeating("SpawnREnemy", 1f, 0.75f);
                 contadorDificultad++;
             }
-            else if (contadorTiempo <= 180 && contadorDificultad == 4)
+            else if (contadorTiempo <= 128.6 && contadorDificultad == 4)
             {
-                InvokeRepeating("SpawnREnemy", 1f, 0.5f);
+                InvokeRepeating("SpawnREnemy", 1f, 0.75f);
                 contadorDificultad++;
             }
-            else if (contadorTiempo <= 150 && contadorDificultad == 5)
+            else if (contadorTiempo <= 85.75 && contadorDificultad == 5)
             {
-                InvokeRepeating("SpawnREnemy", 1f, 0.5f);
+                InvokeRepeating("SpawnREnemy", 1f, 0.75f);
                 contadorDificultad++;
             }
-            else if (contadorTiempo <= 120 && contadorDificultad == 6)
+            else if (contadorTiempo <= 42.9 && contadorDificultad == 6)
             {
-                InvokeRepeating("SpawnREnemy", 1f, 0.5f);
-                contadorDificultad++;
-            }
-            else if (contadorTiempo <= 90 && contadorDificultad == 7)
-            {
-                InvokeRepeating("SpawnREnemy", 1f, 0.5f);
-                contadorDificultad++;
-            }
-            else if (contadorTiempo <= 60 && contadorDificultad == 8)
-            {
-                InvokeRepeating("SpawnREnemy", 1f, 0.5f);
-                contadorDificultad++;
-            }
-            else if (contadorTiempo <= 30 && contadorDificultad == 9)
-            {
-                InvokeRepeating("SpawnREnemy", 1f, 0.5f);
+                InvokeRepeating("SpawnREnemy", 1f, 0.75f);
                 contadorDificultad++;
             }
 
@@ -85,13 +70,13 @@ public class SpawnEnemy : MonoBehaviour
 
         Vector3 posicion = huevo.position;
 
-        while (!(positionx < posicion.x - 3 || positionx > posicion.x + 3))
+        while (!(positionx < posicion.x - 5 || positionx > posicion.x + 5))
         {
             positionx = Random.Range(-xLimits, xLimits);
 
         }
 
-        while (!(positiony < posicion.y - 3 || positiony > posicion.y + 3))
+        while (!(positiony < posicion.y - 5 || positiony > posicion.y + 5))
         {
             positiony = Random.Range(-yLimits, yLimits);
         }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: eb03f305088def9419ad0142e0d736f1
+guid: 7bb6197b8742aa642a82336e7b048e4b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1848117203632353988
-    second: Captura de pantalla 2025-01-25 202030_0
+      213: 4779353983846691263
+    second: Moricion_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Captura de pantalla 2025-01-25 202030_0
+      name: Moricion_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 956
-        height: 466
+        width: 725
+        height: 608
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4c27bc11ec4d5a910800000000000000
-      internalID: 1848117203632353988
+      spriteID: fb1b70f402da35240800000000000000
+      internalID: 4779353983846691263
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Captura de pantalla 2025-01-25 202030_0: 1848117203632353988
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

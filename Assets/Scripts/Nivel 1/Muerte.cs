@@ -5,8 +5,8 @@ using UnityEngine.UI;
 public class Muerte : MonoBehaviour
 {
 
-    private void OnCollisionEnter2D(Collision2D collision) 
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
     }
 }

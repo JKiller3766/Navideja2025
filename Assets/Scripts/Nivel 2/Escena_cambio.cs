@@ -1,6 +1,6 @@
-    using System.Collections;
-    using System.Collections.Generic;
-    using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class Escena_cambio : MonoBehaviour
 {
@@ -10,19 +10,20 @@ public class Escena_cambio : MonoBehaviour
     void Start()
     {
         seg = 0;
-        gameObject.SetActive(true); 
+        gameObject.SetActive(true);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Invoke("DestroyObject", 2f); 
-    
+        Invoke("DestroyObject", 2f);
+
     }
 
-    void DestroyObject() {
+    void DestroyObject()
+    {
         gameObject.SetActive(false);
         //soundManager.selectedAudio(0, 0.5f);
-        Destroy(gameObject); 
+        Destroy(gameObject);
     }
 }

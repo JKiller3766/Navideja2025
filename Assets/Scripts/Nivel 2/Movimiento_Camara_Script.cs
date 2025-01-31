@@ -5,16 +5,14 @@ public class MovimientoObjeto : MonoBehaviour
 {
     [SerializeField] private float velocidad; 
     private Vector2 moveInput;
-    private Rigidbody2D playerRb;
+    private Rigidbody2D cameraRb;
 
     public Vector2 posicion;
 
-    [SerializeField] public Transform huevo;
-
     public void Start()
-    { 
-        playerRb = GetComponent<Rigidbody2D>();
-        playerRb.MovePosition(new Vector2(0, -3));
+    {
+        cameraRb = GetComponent<Rigidbody2D>();
+        cameraRb.MovePosition(new Vector2(0, -3));
     }
 
     public void Update()  
@@ -23,14 +21,8 @@ public class MovimientoObjeto : MonoBehaviour
     } 
     
     private void FixedUpdate()
-    {  
-        playerRb.MovePosition(playerRb.position + moveInput * velocidad * Time.fixedDeltaTime);
-
-        if (huevo.position.y == playerRb.position.y)
-        {
-            Destroy(huevo);
-            SceneManager.LoadScene(5); //escena 2 es el juego
-        }
+    {
+        cameraRb.MovePosition(cameraRb.position + moveInput * velocidad * Time.fixedDeltaTime);
     }
    
 }

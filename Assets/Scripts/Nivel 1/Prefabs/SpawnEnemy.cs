@@ -4,7 +4,8 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
-using static UnityEngine.Rendering.HableCurve; 
+using UnityEngine.SceneManagement;
+using static UnityEngine.Rendering.HableCurve;
 
 public class SpawnEnemy : MonoBehaviour
 {
@@ -21,52 +22,59 @@ public class SpawnEnemy : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("SpawnREnemy", 1f, 0.75f);
+        InvokeRepeating("SpawnREnemy", 1f, 1f);
     }
 
-        void FixedUpdate()
+    void FixedUpdate()
+    {
+        if (contadorTiempo > 0)
         {
-            if (contadorTiempo > 0)
-            {
             contadorTiempo -= Time.fixedDeltaTime;
-            }
-            
-            if (contadorTiempo <= 257.15 && contadorDificultad == 1){
-                InvokeRepeating("SpawnREnemy", 1f, 0.75f);
-                contadorDificultad++;
-                dificultad.text = "DIF. = " + ((int)contadorDificultad).ToString();
+        }
 
-            } else if (contadorTiempo <= 214.3 && contadorDificultad == 2)
-            {
-                InvokeRepeating("SpawnREnemy", 1f, 0.75f);
-                contadorDificultad++;
-                dificultad.text = "DIF. = " + contadorDificultad.ToString();
-            }
-            else if (contadorTiempo <= 171.45 && contadorDificultad == 3)
-            {
-                InvokeRepeating("SpawnREnemy", 1f, 0.75f);
-                contadorDificultad++;
-                dificultad.text = "DIF. = " + contadorDificultad.ToString();
-            }
-            else if (contadorTiempo <= 128.6 && contadorDificultad == 4)
-            {
-                InvokeRepeating("SpawnREnemy", 1f, 0.75f);
-                contadorDificultad++;
-                dificultad.text = "DIF. = " + contadorDificultad.ToString();
-            }
-            else if (contadorTiempo <= 85.75 && contadorDificultad == 5)
-            {
-                InvokeRepeating("SpawnREnemy", 1f, 0.75f);
-                contadorDificultad++;
-                dificultad.text = "DIF. = " + contadorDificultad.ToString();
-            }
-            else if (contadorTiempo <= 42.9 && contadorDificultad == 6)
-            {
-                InvokeRepeating("SpawnREnemy", 1f, 0.75f);
-                contadorDificultad++;
-                dificultad.text = "DIF. = " + contadorDificultad.ToString();
-            }
+        if (contadorTiempo <= 257.15 && contadorDificultad == 1)
+        {
+            InvokeRepeating("SpawnREnemy", 1f, 1f);
+            contadorDificultad++;
+            dificultad.text = "DIF. = " + ((int)contadorDificultad).ToString();
 
+        }
+        else if (contadorTiempo <= 214.3 && contadorDificultad == 2)
+        {
+            InvokeRepeating("SpawnREnemy", 1f, 0.75f);
+            contadorDificultad++;
+            dificultad.text = "DIF. = " + ((int)contadorDificultad).ToString();
+        }
+        else if (contadorTiempo <= 171.45 && contadorDificultad == 3)
+        {
+            InvokeRepeating("SpawnREnemy", 1f, 0.75f);
+            contadorDificultad++;
+            dificultad.text = "DIF. = " + ((int)contadorDificultad).ToString();
+        }
+        else if (contadorTiempo <= 128.6 && contadorDificultad == 4)
+        {
+            InvokeRepeating("SpawnREnemy", 1f, 0.5f);
+            contadorDificultad++;
+            dificultad.text = "DIF. = " + ((int)contadorDificultad).ToString();
+        }
+        else if (contadorTiempo <= 85.75 && contadorDificultad == 5)
+        {
+            InvokeRepeating("SpawnREnemy", 1f, 0.5f);
+            contadorDificultad++;
+            dificultad.text = "DIF. = " + ((int)contadorDificultad).ToString(); ;
+        }
+        else if (contadorTiempo <= 42.9 && contadorDificultad == 6)
+        {
+            InvokeRepeating("SpawnREnemy", 1f, 0.5f);
+            contadorDificultad++;
+            dificultad.text = "DIF. = " + ((int)contadorDificultad).ToString();
+        }
+
+
+        if (contadorTiempo <= 0)
+        {
+            SceneManager.LoadScene(3);
+        }
     }
 
     // 

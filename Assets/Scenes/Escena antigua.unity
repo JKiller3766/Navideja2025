@@ -210,6 +210,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 5185392876797350989, guid: f67fe7be8aa220543ad83e57faad4080, type: 3}
+  contadorTiempo: 0
+  huevo: {fileID: 0}
+  dificultad: {fileID: 0}
 --- !u!1 &743603917
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-using System.Collections.Generic; 
+using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
@@ -14,7 +14,7 @@ public class PlayerMovement2 : MonoBehaviour
     private Rigidbody2D playerRb;
 
     public Vector2 posicion;
-    
+
     public void Start()
     {
         playerAnimator = GetComponent<Animator>();
@@ -22,7 +22,7 @@ public class PlayerMovement2 : MonoBehaviour
         playerRb.MovePosition(new Vector2(0, 0));
     }
 
-    public void Update()  
+    public void Update()
     {
 
         float inputHorizontal = Input.GetAxisRaw("Horizontal");
@@ -31,11 +31,11 @@ public class PlayerMovement2 : MonoBehaviour
 
         playerAnimator.SetFloat("Horizontal", inputHorizontal);
         playerAnimator.SetFloat("Vertical", inputVertical);
-        playerAnimator.SetFloat("Speed", moveInput.sqrMagnitude);;
-    } 
-    
+        playerAnimator.SetFloat("Speed", moveInput.sqrMagnitude); ;
+    }
+
     private void FixedUpdate()
-    {  
+    {
         playerRb.MovePosition(playerRb.position + moveInput * velocidad * Time.fixedDeltaTime);
         posicion = playerRb.position;
 
@@ -44,5 +44,5 @@ public class PlayerMovement2 : MonoBehaviour
             SceneManager.LoadScene(3);
         }
     }
-   
+
 }

@@ -41,7 +41,7 @@ public class PlayerMovement2 : MonoBehaviour
 
         if (playerRb.position.y > 156)
         {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(5);
         }
     }
 

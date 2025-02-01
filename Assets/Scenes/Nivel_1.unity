@@ -210,7 +210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 5185392876797350989, guid: f67fe7be8aa220543ad83e57faad4080, type: 3}
-  contadorTiempo: 10
+  contadorTiempo: 300
   huevo: {fileID: 946286632}
   dificultad: {fileID: 954270861}
 --- !u!1 &562391407
@@ -2657,8 +2657,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e6221216a5c68f44b7447e03e454965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  min: 0
-  seg: 10
+  min: 5
+  seg: 0
   tiempo: {fileID: 562391409}
 --- !u!4 &1487192251
 Transform:

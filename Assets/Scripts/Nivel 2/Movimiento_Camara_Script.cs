@@ -9,10 +9,13 @@ public class MovimientoObjeto : MonoBehaviour
 
     public Vector2 posicion;
 
+    private float tiempoEspera;
+
     public void Start()
     {
         cameraRb = GetComponent<Rigidbody2D>();
         cameraRb.MovePosition(new Vector2(0, -3));
+        tiempoEspera = 1;
     }
 
     public void Update()  
@@ -22,7 +25,16 @@ public class MovimientoObjeto : MonoBehaviour
     
     private void FixedUpdate()
     {
-        cameraRb.MovePosition(cameraRb.position + moveInput * velocidad * Time.fixedDeltaTime);
+        if (tiempoEspera >= 0)
+        {
+            tiempoEspera -= Time.fixedDeltaTime;
+        }
+
+        if (tiempoEspera <= 0)
+        {
+            cameraRb.MovePosition(cameraRb.position + moveInput * velocidad * Time.fixedDeltaTime);
+        }
+        
     }
    
 }

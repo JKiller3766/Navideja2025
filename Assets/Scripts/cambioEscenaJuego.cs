@@ -18,6 +18,6 @@ public class cambioEscenaJuego : MonoBehaviour
     }
    public void Escena1()
    {
-    SceneManager.LoadScene(2); //escena 2 es el juego
+    SceneManager.LoadScene(2);
    }
 }

@@ -7,6 +7,6 @@ public class Muerte : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(6);
     }
 }

@@ -41,10 +41,5 @@ public class Tiempo : MonoBehaviour
             segText = ((int)seg).ToString();
         }
         tiempo.text = "" + minText + ":" + segText;
-
-        if (min <= 0 && seg <= 0)
-        {
-            SceneManager.LoadScene(3);
-        }
     }
 }

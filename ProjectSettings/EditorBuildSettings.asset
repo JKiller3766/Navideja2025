@@ -15,14 +15,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Nivel_1.unity
     guid: e1558a87a978a6d47adfe9a37fe4aad3
   - enabled: 1
+    path: Assets/Scenes/CinMitad.unity
+    guid: 56e8242d8ca0f0341a577cd96779b47f
+  - enabled: 1
     path: Assets/Scenes/Nivel_2.unity
     guid: 8f6e7be151ebf5842a96a46b4d342a9f
   - enabled: 1
+    path: Assets/Scenes/CinFinal.unity
+    guid: fdc63792b1644e64381f1e8acea03ffb
+  - enabled: 1
     path: Assets/Scenes/Muerte.unity
     guid: 508db87bba11f094d8416536791d07f0
-  - enabled: 1
-    path: Assets/Scenes/cINEMATICA FINAL.unity
-    guid: 56e8242d8ca0f0341a577cd96779b47f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

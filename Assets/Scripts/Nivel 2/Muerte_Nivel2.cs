@@ -8,7 +8,7 @@ public class Muerte_Nivel2 : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Player")) // Verifica si el objeto tiene la Tag "Player"
         {
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(6);
         }
     }
 }

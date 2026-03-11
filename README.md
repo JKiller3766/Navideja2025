@@ -27,7 +27,7 @@ Keyboard:
 
 ### Links
 
- - itch.io Release: [$(itch.io Desayunado)](https://ninjin780.itch.io/desayunado)
+ - itch.io Release: [itch.io - Desayunado](https://ninjin780.itch.io/desayunado)
 
 ### License
 

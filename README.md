@@ -1,6 +1,6 @@
 ## Desayunado - Gameja
 
-<img width="923" height="643" alt="image" src="https://github.com/user-attachments/assets/33a4dd39-ba8e-4ba8-8396-0da07395d0d8" />
+![$(Game Title)](Assets/Resources/Sprites/PortadaHuevada.png "$(Game Title)")
 
 ### Description
 
@@ -27,7 +27,7 @@ Keyboard:
 
 ### Links
 
- - itch.io Release: [itch.io - Desayunado](https://ninjin780.itch.io/desayunado)
+ - Itch.Io Release: [Itch.Io - Desayunado](https://ninjin780.itch.io/desayunado)
 
 ### License
 
